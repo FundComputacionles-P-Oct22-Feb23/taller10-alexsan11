@@ -1,0 +1,53 @@
+proble02:
+// Generar una función que tenga 4 parámetros de tipo decimal y devuelva el promedio cualitativo de los parámetros.
+// Si el promedio es:
+// De 0 a 5 el promedio cualitativo es Regular
+// De 5.1 a 8 el promedio es Bueno
+// De 8.1 a 9 el promedio es Muy Bueno
+// De 9.1 a 10 el promedio es Sobresaliente.
+// A la función se la debe llamar desde un método principal. Los parámetros necesarios para llamar 
+//a la función, deben ser ingresados solicitados al usuario.
+// En la función principal se debe imprimir los siguiente:
+//El promedio de las notas: 10, 5, 8, 7 es Bueno
+
+1.Inicio
+2. funcion principal()
+3. 	nota1, d[0-n]
+4.	nota2, d[0-n]
+5.	nota3, d[0-n]
+6.	nota4, d[0-n]
+7.	Escribir "Ingrese la primera nota:"
+8.	Leer nota1
+9.	Escribir "Ingrese la segunda nota:"
+10.	Leer nota2
+11.	Escribir "Ingrese la tercera nota:"
+12.	Leer nota3
+13.	Escribir "Ingrese la cuarta nota:"
+14.	Leer nota4
+15.   resultado, x(100)[{A-Z}, {a-z}, {0-n}, {BS, :}]
+16.    resulatdo <-- obtenerNotaCualitativa(nota1, nota2, nota3, nota4)
+17.    Escribir resultado
+18. fin funcion principal
+
+19. funcion obtenerNotaCualitativa(n1, d; n2, d; n3, d; n4, d): x 
+20.	promedio, d[0-n]
+21.	promedio <-- (n1 + n2 + n3 + n4)/4
+22.	cadena, x(100)[{A-Z}, {a-z}, {0-n}, {BS, :}]  
+23.	Si promedio >= 0 and promedio <= 5 entonces
+24.		cadena <-- "El promedio de las notas " + n1 + ", " + n2 + ", " + n3 + ", " + n4 + " es Regular."
+25.	De lo contario
+26.	   Si promedio >= 5.1 and promedio <= 8 entonces
+27.		 cadena <-- "El promedio de las notas " + n1 + ", " + n2 + ", " + n3 + ", " + n4 + " es Bueno."
+28.	   De lo contrario
+29.	       Si promedio >= 8.1 and promedio <= 9 entonces
+30.		    cadena <-- "El promedio de las notas " + n1 + ", " + n2 + ", " + n3 + ", " + n4 + " es Muy bueno."
+31.	       De lo contrario
+32.		 Si promedio >= 9.1 and promedio <= 10 entonces
+33.		       cadena <-- "El promedio de las notas " + n1 + ", " + n2 + ", " + n3 + ", " + n4 + " es Sobresaliente." 
+34.		  Fin Si
+35.		Fin si
+36.	  Fin Si
+37.	Fin Si
+38.	retornar cadena
+38. Fin funcion obtenerNotaCualitativa
+39.Fin	
